@@ -1,106 +1,204 @@
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#0a0f18;color:#e8edf5;font-family:"IBM Plex Sans KR",sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}.scanline{position:fixed;inset:0;pointer-events:none;z-index:5;opacity:.12;background:repeating-linear-gradient(0deg,transparent 0 3px,rgba(255,255,255,.025) 4px)}.topbar{height:76px;border-bottom:1px solid #202b3a;display:flex;align-items:center;justify-content:space-between;padding:0 max(calc((100vw - 1160px)/2),24px);background:rgba(10,15,24,.92);position:sticky;top:0;z-index:10;backdrop-filter:blur(14px)}.brand{display:flex;gap:12px;align-items:center;font:600 13px "Fira Code",monospace;letter-spacing:.08em}.brand-mark{display:grid;place-items:center;width:38px;height:38px;border:1px solid #38d9a9;color:#38d9a9;border-radius:9px;font-size:14px}.brand-sub{display:block;color:#738198;font-size:9px;margin-top:3px}.topbar nav{display:flex;gap:30px;font:11px "Fira Code",monospace;color:#aab6c8}.topbar nav a:hover,footer a:hover{color:#38d9a9}.availability{font:10px "Fira Code",monospace;color:#8e9bae}.availability i{display:inline-block;width:7px;height:7px;border-radius:50%;background:#38d9a9;margin-right:8px;box-shadow:0 0 12px #38d9a9}.wrap{max-width:1160px;margin:auto;padding-left:24px;padding-right:24px}.hero{min-height:590px;padding-top:100px;padding-bottom:34px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:60px;position:relative}.eyebrow,.kicker,.metric-label,.card-top,.hero-foot{font:11px "Fira Code",monospace;letter-spacing:.08em;color:#8b9ab0}.prompt{color:#38d9a9}.hero h1{font-size:clamp(42px,5vw,68px);line-height:1.12;letter-spacing:-.055em;margin:22px 0}.hero h1 em,.contact h2 em{font-style:normal;color:#38d9a9}.lead{font-size:19px;color:#d4deeb;line-height:1.8}.intro{font:12px "Fira Code",monospace;color:#8393aa;margin:24px 0 30px}.hero-actions{display:flex;gap:12px}.btn{display:inline-flex;align-items:center;gap:22px;padding:12px 18px;border-radius:5px;font-size:13px;font-weight:600}.btn.primary{background:#38d9a9;color:#06120f}.btn.primary:hover{background:#68edc5}.btn.secondary{border:1px solid #344154;color:#d8e1ed}.terminal{border:1px solid #29394b;background:#0d1521;border-radius:9px;box-shadow:0 25px 80px #0007;overflow:hidden;font:12px "Fira Code",monospace}.terminal-head{height:42px;background:#141f2e;border-bottom:1px solid #29394b;display:flex;align-items:center;justify-content:space-between;padding:0 14px;color:#8292a8;font-size:10px}.dots{display:flex;gap:5px}.dots i{width:8px;height:8px;border-radius:50%;background:#ef6a67}.dots i:nth-child(2){background:#e8bd4d}.dots i:nth-child(3){background:#43c98d}.terminal-body{padding:22px 24px 26px;min-height:300px}.terminal-body p{margin:0 0 9px}.green{color:#38d9a9}.blue{color:#83b8ff}.output{color:#b3c1d4;padding-left:18px;margin-bottom:18px!important;line-height:1.8}.cursor{color:#38d9a9;animation:blink 1s steps(2,start) infinite}@keyframes blink{to{visibility:hidden}}.hero-foot{grid-column:1/-1;display:flex;justify-content:space-between;border-top:1px solid #202b3a;padding-top:18px;font-size:9px}.metrics{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #202b3a;border-bottom:1px solid #202b3a;padding-top:24px;padding-bottom:24px}.metrics>div{padding:0 22px;border-right:1px solid #202b3a}.metrics>div:first-child{padding-left:0}.metrics>div:last-child{border:0}.metric-label{display:block;font-size:9px;color:#718198}.metrics strong{display:block;font:600 17px "Fira Code",monospace;margin:7px 0}.metrics small{color:#8290a4;font-size:11px}.section{padding-top:110px;padding-bottom:110px}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:38px}.kicker{color:#38d9a9;font-size:10px}.section h2{font-size:38px;letter-spacing:-.04em;margin:8px 0 0}.section h2 span{color:#38d9a9}.section-head>p{font-size:12px;color:#8795a9;text-align:right}.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.project-card{border:1px solid #273447;background:#0e1622;border-radius:8px;padding:22px;transition:.2s}.project-card:hover{border-color:#3b806f;transform:translateY(-3px)}.project-card.featured{grid-column:span 2}.card-top{display:flex;justify-content:space-between;font-size:9px;color:#8292a8}.tag{color:#38d9a9;border:1px solid #245b4d;padding:3px 7px;border-radius:3px}.project-card h3{font-size:18px;margin:20px 0 8px}.project-card>p{font-size:12px;color:#9aa8ba;min-height:42px}.chips{display:flex;flex-wrap:wrap;gap:6px;margin:17px 0}.chips span{font:9px "Fira Code",monospace;color:#9eafc3;border:1px solid #2a394c;padding:4px 7px;border-radius:3px}.project-visual{margin-top:18px;height:155px;background:#0a111b;border:1px solid #233247;border-radius:5px;display:flex;align-items:center;justify-content:center;color:#a9bdd2;font:10px "Fira Code",monospace;overflow:hidden}.kube{flex-direction:column;gap:9px;padding:12px}.node{border:1px solid #38d9a9;padding:8px 18px;text-align:center;color:#38d9a9}.node span{display:block;color:#7d91a9;font-size:8px}.connector{height:12px;border-left:1px solid #38d9a9}.workers{display:flex;gap:10px;width:80%}.workers div{flex:1;border:1px solid #38516a;text-align:center;padding:9px 2px;color:#a8c7e8}.workers small{display:block;color:#71869f;font-size:8px;margin-top:4px}.layers{flex-direction:column;gap:7px}.layer-row{display:flex;gap:10px}.layer-row b{border:1px solid #50729b;padding:9px 22px;color:#91b9e7}.storage{gap:10px;flex-wrap:wrap;padding:20px}.disk{width:62px;height:62px;border:1px solid #38d9a9;border-radius:50%;display:grid;place-items:center;color:#38d9a9}.storage-base{width:100%;text-align:center;color:#8399b2}.network{flex-direction:column;gap:4px}.net-device,.net-row b{border:1px solid #52759c;padding:7px 14px}.net-lines{color:#38d9a9}.net-row{display:flex;gap:10px}.net-caption{font-size:9px;color:#38d9a9;margin-top:6px}.pipeline{gap:8px;padding:12px}.pipeline div{border:1px solid #3b806f;padding:12px 8px;color:#a5e7d2;font-size:9px}.pipeline i{color:#38d9a9}.platform{padding:15px;display:block}.dash-title{color:#38d9a9;text-align:left}.dash-stats{display:flex;gap:8px;margin:15px 0}.dash-stats b{flex:1;padding:12px 2px;background:#17283a;color:#9ec8f2;text-align:center}.dash-table i{display:block;height:5px;background:#263a4f;margin:8px 0;width:100%}.dash-table i:nth-child(2){width:75%}.dash-table i:nth-child(3){width:88%}details{border-top:1px solid #263447;padding-top:12px;color:#9aacc1;font-size:11px}summary{cursor:pointer;color:#38d9a9}summary:hover{color:#9bf3d9}.detail{padding:10px 2px}.detail b{color:#d5e0ec}.detail p{margin:4px 0 12px;color:#8d9eb2}.alt{background:#0d1520;border-top:1px solid #1e2b3b;border-bottom:1px solid #1e2b3b}.stack-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.stack-item{border:1px solid #27364a;padding:22px;background:#101b29;border-radius:5px}.stack-item>span{font:10px "Fira Code",monospace;color:#38d9a9}.stack-item h3{font-size:15px;margin:13px 0 5px}.stack-item p{font-size:11px;color:#91a1b5;line-height:1.9}.about-panel{border:1px solid #29394d;background:#0e1724;padding:35px;display:grid;grid-template-columns:130px 1fr;gap:30px;align-items:center}.about-symbol{width:110px;height:110px;border:1px solid #38d9a9;color:#38d9a9;display:grid;place-items:center;font:22px "Fira Code",monospace}.about-panel h3{font-size:20px;margin:0 0 12px}.about-panel p{font-size:13px;color:#a0afc1}.about-panel .muted{font-size:11px;color:#687b92}.contact{border-top:1px solid #202b3a}.contact h2{font-size:48px;line-height:1.2;margin:14px 0}.contact>p{color:#94a4b8;font-size:13px;margin-bottom:25px}.contact>small{display:block;color:#667990;font-size:10px;margin-top:12px}footer{border-top:1px solid #202b3a;padding:25px max(calc((100vw - 1160px)/2),24px);display:flex;justify-content:space-between;color:#728198;font:9px "Fira Code",monospace}
-@media(max-width:800px){.topbar{padding:0 18px}.topbar nav{gap:12px}.availability{display:none}.hero{grid-template-columns:1fr;padding-top:70px;gap:35px}.hero-foot{margin-top:10px}.metrics{grid-template-columns:repeat(2,1fr);gap:20px}.metrics>div:nth-child(2){border:0}.metrics>div{padding-left:14px}.metrics>div:first-child{padding-left:0}.section{padding-top:75px;padding-bottom:75px}.section-head{display:block}.section-head>p{text-align:left}.project-card.featured{grid-column:auto}.project-grid{grid-template-columns:1fr}.stack-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:520px){.topbar{height:64px}.brand{font-size:10px}.topbar nav{font-size:8px;gap:9px}.topbar nav a:nth-child(3){display:none}.hero h1{font-size:43px}.lead{font-size:16px}.terminal-body{padding:17px}.metrics strong{font-size:14px}.section h2{font-size:31px}.stack-grid{grid-template-columns:1fr}.about-panel{grid-template-columns:1fr;padding:24px}.about-symbol{width:76px;height:76px}.contact h2{font-size:39px}footer{gap:10px;flex-wrap:wrap;font-size:8px}}
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cloud Infrastructure Engineer Portfolio — Kubernetes, Linux, Infrastructure Automation and Platform Engineering">
+  <title>CHO SEONG IK | Cloud Infrastructure Engineering</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scanline"></div>
+  <header class="topbar">
+    <a class="brand" href="#home"><span class="brand-mark"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M16 3l11.3 5.4 2.8 12.2-7.8 9.8H9.7L1.9 20.6l2.8-12.2z"/><circle cx="16" cy="17" r="3.2"/><path d="M16 14V7M18.9 15.4l5.5-3.2M19.6 18.5l6.2 1.6M17.6 20.6l2.8 5.4M14.4 20.6l-2.8 5.4M12.4 18.5l-6.2 1.6M13.1 15.4L7.6 12.2"/></svg></span><span>CHO SEONG IK<span class="brand-sub">INFRASTRUCTURE ENGINEER</span></span></a>
+    <nav>
+      <a href="#projects">PROJECTS</a><a href="#stack">STACK</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a>
+    </nav>
+    <span class="availability"><i></i> ENGINEERING PORTFOLIO · 2022—2026</span>
+  </header>
 
-/* ===== Kubernetes architecture theme ===== */
-body{background-image:linear-gradient(#ffffff05 1px,transparent 1px),linear-gradient(90deg,#ffffff05 1px,transparent 1px);background-size:44px 44px}
-.brand-mark{border-color:#326ce5;color:#7fa6ff}.brand-mark svg,.about-symbol svg{width:22px;height:22px}.about-symbol{border-color:#326ce5;color:#7fa6ff}.about-symbol svg{width:64px;height:64px}
-.out-pre{margin:0 0 16px;padding-left:18px;font:inherit;color:#b3c1d4;line-height:1.75;overflow-x:auto;white-space:pre}
-.metric-label{color:#7fa6ff}
-.k8s-ns{position:relative;border:1px dashed #2b4a8a;border-radius:12px;padding:34px 18px 18px;background:rgba(50,108,229,.035)}
-.ns-label{position:absolute;top:-11px;left:18px;background:#0a0f18;padding:0 10px;font:10px "Fira Code",monospace;color:#7fa6ff}.ns-label span{color:#718198;margin-left:8px}
-.ingress{display:flex;align-items:center;gap:12px;margin-bottom:22px;font:10px "Fira Code",monospace;color:#8292a8}
-.ingress b{font-weight:500;border:1px solid #326ce5;color:#9dbcff;padding:7px 12px;border-radius:4px;background:#0e1622;white-space:nowrap}
-.flow{flex:1;min-width:14px;height:1px;background:repeating-linear-gradient(90deg,#326ce5 0 6px,transparent 6px 12px);animation:flow 1s linear infinite}
-@keyframes flow{to{background-position:12px 0}}
-.project-card{border-top:2px solid #326ce5}
-.project-card:hover{border-color:#3b806f;border-top-color:#38d9a9}
-.pod-meta{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;margin-top:16px;padding:8px 10px;background:#0a111b;border:1px solid #233247;border-radius:5px;font:10px "Fira Code",monospace;color:#8292a8}
-.pod-meta .name{color:#d5e0ec}.pod-meta .name b{font-weight:500;color:#83b8ff}.pod-meta .lbl{color:#718198}
-.pod-meta .st{margin-left:auto;color:#38d9a9}.pod-meta .st i{display:inline-block;width:6px;height:6px;border-radius:50%;background:#38d9a9;margin-right:6px;box-shadow:0 0 8px #38d9a9;animation:pulse 2s ease-in-out infinite}
-@keyframes pulse{50%{opacity:.35}}
-.project-visual.kube{height:auto;padding:20px 14px}
-.k-lb{border:1px dashed #326ce5;color:#9dbcff;padding:7px 18px;text-align:center}.k-lb small{display:block;font-size:8px;color:#71869f}
-.kube .node{border-color:#326ce5;color:#9dbcff;background:#326ce510}.kube .connector{border-color:#326ce5}
-.workers div{border-color:#326ce5;background:#0e1622}
-.workers em{display:block;font-style:normal;margin-top:6px}
-.pods u{display:inline-block;width:9px;height:9px;margin:0 2px;border:1px solid #38d9a9;border-radius:2px;background:#38d9a922}
-.stack-item>span{display:flex;justify-content:space-between;color:#7fa6ff}
-.stack-item>span em{font-style:normal;color:#38d9a9}.stack-item>span em::before{content:"";display:inline-block;width:6px;height:6px;margin-right:6px;border-radius:50%;background:#38d9a9}
-.stack-item{border-left:2px solid #326ce5}
-@media(max-width:520px){.k8s-ns{padding:30px 10px 10px}.ingress{font-size:8px;gap:6px}.ingress b{padding:5px 6px}.out-pre{font-size:10px}.workers{width:100%}}
+  <main id="home">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="prompt">engineer@portfolio:~$</span> whoami</div>
+        <h1>Cloud Infrastructure<br><em>Engineer.</em></h1>
+        <p class="lead">서버와 네트워크부터 Kubernetes 플랫폼까지,<br>인프라를 구축하고 운영하며 개선합니다.<br>운영 과정에서 필요한 자동화와 관리 시스템도 직접 구현합니다.</p>
+        <p class="intro">PLATFORM ENGINEERING · INFRASTRUCTURE OPERATIONS · AUTOMATION</p>
+        <div class="hero-actions"><a class="btn primary" href="#projects">프로젝트 보기 <b>↘</b></a><a class="btn secondary" href="#about">프로필 확인</a></div>
+      </div>
+      <div class="cluster" aria-label="Kubernetes cluster architecture"><div class="cl-label">engineering-map <span>10 work domains · conceptual view</span></div>
+        <div class="ingress"><b>INFRASTRUCTURE</b><i class="flow"></i><b>PLATFORM &amp; SERVICES</b><i class="flow"></i><b>OPERATIONS</b></div>
+        <div class="cp"><strong>ENGINEERING SCOPE</strong><span>Design</span><span>Build</span><span>Operate</span><span>Troubleshoot</span><span>Automate</span><em>Cloud Infrastructure Engineer</em></div>
+        <div class="cl-link"></div>
+        <div class="cl-nodes"><div class="wnode"><div class="wnode-head"><span><b>DOMAIN-01</b> · platform &amp; identity</span><em>In Scope</em></div><a class="ns-box" href="#ns-container-platform"><div class="n"><span>01 · ns/container-platform</span><b>Project</b></div><div class="t">Kubernetes 클라우드 플랫폼</div><div class="p"><u></u><u></u></div></a><a class="ns-box" href="#ns-identity-ldap"><div class="n"><span>02 · ns/identity-ldap</span><b>Project</b></div><div class="t">LDAP 다중화 자동화</div><div class="p"><u></u><u></u><u></u></div></a><a class="ns-box" href="#ns-access-security"><div class="n"><span>03 · ns/access-security</span><b>Project</b></div><div class="t">접근제어·패스워드 관리</div><div class="p"><u></u><u></u></div></a><div class="wnode-foot"><span>kubelet</span><span>kube-proxy</span><span>containerd</span></div></div><div class="wnode"><div class="wnode-head"><span><b>DOMAIN-02</b> · compute &amp; network</span><em>In Scope</em></div><a class="ns-box" href="#ns-virtualization"><div class="n"><span>04 · ns/virtualization</span><b>Project</b></div><div class="t">가상화·테스트 베드</div><div class="p"><u></u><u></u><u></u></div></a><a class="ns-box" href="#ns-network-lab"><div class="n"><span>07 · ns/network-lab</span><b>Project</b></div><div class="t">네트워크·가상 장비 검증</div><div class="p"><u></u><u></u></div></a><a class="ns-box" href="#ns-radius-auth"><div class="n"><span>09 · ns/radius-auth</span><b>Project</b></div><div class="t">LDAP 연동 무선 인증</div><div class="p"><u></u><u></u></div></a><div class="wnode-foot"><span>kubelet</span><span>kube-proxy</span><span>containerd</span></div></div><div class="wnode"><div class="wnode-head"><span><b>DOMAIN-03</b> · delivery &amp; operations</span><em>In Scope</em></div><a class="ns-box" href="#ns-infra-platform"><div class="n"><span>05 · ns/infra-platform</span><b>Project</b></div><div class="t">인프라 자산 관리 시스템</div><div class="p"><u></u><u></u></div></a><a class="ns-box" href="#ns-cicd-pipeline"><div class="n"><span>06 · ns/cicd-pipeline</span><b>Project</b></div><div class="t">GitLab·Jenkins 자동화</div><div class="p"><u></u><u></u><u></u></div></a><a class="ns-box" href="#ns-ceph-storage"><div class="n"><span>08 · ns/ceph-storage</span><b>Project</b></div><div class="t">Rook-Ceph·Velero 백업</div><div class="p"><u></u><u></u><u></u></div></a><a class="ns-box" href="#ns-observability"><div class="n"><span>10 · ns/observability</span><b>Project</b></div><div class="t">복구·점검 자동화·모니터링</div><div class="p"><u></u><u></u><u></u></div></a><div class="wnode-foot"><span>kubelet</span><span>kube-proxy</span><span>containerd</span></div></div></div>
+        <div class="cl-hint">▸ 업무 영역을 선택하면 관련 프로젝트와 상세 수행 내용을 확인할 수 있습니다 · 개념도</div><div class="cl-hint">※ 실제 단일 Kubernetes 클러스터의 배치도나 운영 상태가 아닌, 수행 업무를 기술 영역별로 분류한 포트폴리오 개념도입니다.</div></div>
+      <div class="hero-foot"><span>01 / ENGINEERING MAP · WORK DOMAINS</span><span>BUILD · OPERATE · AUTOMATE</span></div>
+    </section>
 
-/* ===== Hero: cluster architecture diagram ===== */
-.hero{grid-template-columns:1fr;gap:30px;min-height:0;padding-top:56px;align-items:start}
-.hero-copy{display:grid;grid-template-columns:1.2fr 1fr;column-gap:50px;align-items:end}
-.hero-copy .eyebrow{grid-column:1/-1}
-.hero-copy h1{grid-column:1;grid-row:2/5;margin:16px 0 0;font-size:clamp(36px,4.4vw,56px)}
-.hero-copy .lead{grid-column:2;margin:16px 0 0;font-size:16px}
-.hero-copy .intro{grid-column:2;margin:12px 0 14px}
-.hero-copy .hero-actions{grid-column:2}
-.cluster{position:relative;border:1px dashed #326ce5;border-radius:14px;padding:30px 18px 16px;background:rgba(50,108,229,.04);font-family:"Fira Code",monospace}
-.cl-label{position:absolute;top:-11px;left:18px;background:#0a0f18;padding:0 10px;font-size:10px;color:#7fa6ff}.cl-label span{color:#718198;margin-left:8px}
-.cluster .ingress{margin-bottom:16px}
-.cp{display:flex;flex-wrap:wrap;align-items:center;gap:8px;border:1px solid #326ce5;background:#326ce512;border-radius:8px;padding:12px 14px;font-size:10px}
-.cp strong{color:#9dbcff;letter-spacing:.08em;margin-right:6px}
-.cp span{border:1px solid #2a4a86;padding:5px 9px;border-radius:3px;color:#a8c7e8}
-.cp em{margin-left:auto;font-style:normal;color:#38d9a9}
-.cl-link{width:0;height:14px;margin:0 auto;border-left:1px dashed #326ce5}
-.cl-nodes{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}
-.cl-nodes::before{content:"";position:absolute;top:-16px;left:16.6%;right:16.6%;border-top:1px dashed #326ce5}
-.wnode{position:relative;border:1px solid #29394b;background:#0d1521;border-radius:8px;padding:12px}
-.wnode::before{content:"";position:absolute;top:-16px;left:50%;height:16px;border-left:1px dashed #326ce5}
-.wnode-head{display:flex;justify-content:space-between;gap:8px;font-size:10px;color:#8b9ab0;margin-bottom:12px}
-.wnode-head b{color:#d5e0ec;font-weight:500}.wnode-head em{font-style:normal;color:#38d9a9;white-space:nowrap}
-.ns-box{display:block;border:1px dashed #2b4a8a;border-radius:6px;padding:9px 10px;margin-bottom:9px;background:#0a111b;transition:.2s}
-.ns-box:hover{border-color:#38d9a9;background:#0e1d22;transform:translateX(3px)}
-.ns-box .n{display:flex;justify-content:space-between;gap:6px;font-size:9px;color:#9dbcff}.ns-box .n b{font-weight:500;color:#38d9a9}
-.ns-box .t{font:500 12px "IBM Plex Sans KR",sans-serif;color:#d5e0ec;margin:5px 0 7px}
-.ns-box u{display:inline-block;width:9px;height:9px;margin-right:4px;border:1px solid #38d9a9;border-radius:2px;background:#38d9a922;animation:pulse 2.4s ease-in-out infinite}
-.ns-box u:nth-child(2){animation-delay:.6s}.ns-box u:nth-child(3){animation-delay:1.2s}
-.wnode-foot{display:flex;flex-wrap:wrap;gap:6px;border-top:1px solid #1e2b3b;padding-top:9px;font-size:9px;color:#718198}
-.wnode-foot span{border:1px solid #27364a;padding:2px 6px;border-radius:3px}
-.cl-hint{margin-top:10px;text-align:right;font-size:9px;color:#718198}
-/* ===== Projects: each card = namespace ===== */
-.project-grid{gap:32px 18px}
-.project-card{border:1px dashed #2b4a8a;scroll-margin-top:100px}
-.project-card::before{content:"namespace/" attr(data-ns);position:absolute;top:-10px;left:16px;padding:0 8px;background:#0a0f18;font:10px "Fira Code",monospace;color:#7fa6ff}
-.project-card{position:relative}.project-card:hover{border-color:#38d9a9}
-@media(max-width:800px){.hero-copy{display:block}.cl-nodes{grid-template-columns:1fr}.cl-nodes::before{display:none}.wnode::before{display:none}.cl-link{display:none}.cl-nodes{margin-top:14px}.cp em{margin-left:0;width:100%}}
-@media(max-width:520px){.cluster{padding:28px 10px 12px}.cluster .ingress b{font-size:8px}.hero-copy h1{font-size:38px}}
+    <section class="metrics wrap">
+      <div><span class="metric-label">01 / INFRASTRUCTURE</span><strong>Infrastructure</strong><small>Linux · Virtualization · Network</small></div>
+      <div><span class="metric-label">02 / PLATFORM</span><strong>Platform</strong><small>Kubernetes · Container · Storage</small></div>
+      <div><span class="metric-label">03 / AUTOMATION</span><strong>Automation</strong><small>CI/CD · Ansible · Scripting</small></div>
+      <div><span class="metric-label">04 / DEVELOPMENT</span><strong>Development</strong><small>REST API · Infrastructure Tools</small></div>
+    </section>
 
-/* ===== About: extra profile cards ===== */
-.profile-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px 14px;margin-top:34px}
-.cm-card{position:relative;border:1px dashed #2b4a8a;border-radius:8px;background:#0e1622;padding:26px 20px 18px}
-.cm-kind{position:absolute;top:-10px;left:14px;padding:0 8px;background:#0a0f18;font:10px "Fira Code",monospace;color:#7fa6ff}
-.cm-card h4{margin:0 0 10px;font-size:15px}
-.cm-card p,.cm-card li,.cm-card dd{font-size:12px;color:#9aa8ba;line-height:1.8}
-.cm-card ul{margin:0;padding-left:16px}.cm-card p{margin:0}
-.cm-card dl{margin:0}.cm-card dt{font:9px "Fira Code",monospace;color:#38d9a9;letter-spacing:.08em;margin-top:8px}.cm-card dd{margin:2px 0 0;color:#d5e0ec}
-@media(max-width:800px){.profile-grid{grid-template-columns:1fr}}
+    <section id="projects" class="section wrap">
+      <div class="section-head"><div><span class="kicker">02 / NAMESPACES</span><h2>Featured Projects<span>.</span></h2></div><p>인프라 운영과 플랫폼 구축 과정에서 수행한 주요 업무를 문제 영역과 기술적 접근 방식 중심으로 정리했습니다.<br>회사·제품·고객사 고유 명칭 및 내부 식별 정보는 공개 목적에 맞게 일반화했습니다.</p></div>
+      <div class="k8s-ns"><div class="ns-label">engineering-map <span>업무 영역별 프로젝트</span></div>
+      <div class="ingress"><b>INGRESS</b><i class="flow"></i><b>svc/projects · ClusterIP</b><i class="flow"></i><b>10 Work Domains</b></div>
+      <div class="project-grid">
+        <article class="project-card featured" id="ns-container-platform" data-ns="container-platform">
+          <div class="card-top"><span>01 / CONTAINER PLATFORM</span><span class="tag">KUBERNETES</span></div>
+          <div class="pod-meta"><span class="name"><b>cluster</b>/container-platform</span><span class="lbl">tier=platform</span><span class="st"><i></i>Project</span></div>
+          <div class="project-visual kube"><div class="k-lb">INGRESS / LoadBalancer <small>BGP · Cilium / MetalLB</small></div><div class="connector"></div><div class="node"><b>CONTROL PLANE</b><span>kube-apiserver · etcd · scheduler · controller-manager</span></div><div class="connector"></div><div class="workers"><div>WORKER NODE 01<small>kubelet · containerd · CNI</small><em class="pods"><u></u><u></u><u></u></em></div><div>WORKER NODE 02<small>kubelet · containerd · CNI</small><em class="pods"><u></u><u></u><u></u></em></div><div>WORKER NODE 03<small>kubelet · containerd · CNI</small><em class="pods"><u></u><u></u><u></u></em></div></div></div>
+          <h3>Kubernetes 클러스터 구축 및 네트워크·서비스 운영</h3>
+          <p>개발·운영 Kubernetes 환경의 클러스터 구성과 워크로드 운영을 담당했습니다. CNI와 BGP 기반 서비스 네트워크를 검증하고, LoadBalancer·Ingress·서비스 메시 등 클러스터 네트워크 경로를 구성·점검했습니다. 단순 설치에 그치지 않고 외부 네트워크 장비와의 연동, 서비스 접근 경로, 클라이언트 IP 전달 여부까지 확인했습니다.</p>
+          <div class="chips"><span>Kubernetes</span><span>containerd</span><span>Cilium</span><span>Calico</span><span>Istio</span><span>Harbor</span></div>
+          <details><summary>$ kubectl describe — 세부 수행 내용</summary><div class="detail">
+            <b>클러스터 네트워크 설계 및 전환 검토</b>
+            <ul><li>Calico 기반 환경에서 MetalLB·OpenELB를 이용한 BGP 동적 라우팅을 비교 테스트하고, 게이트웨이와 클러스터의 AS 구성 및 BGP 피어링을 검증</li><li>Calico와 MetalLB BGP 구성 시 발생한 포트·프로토콜 충돌을 분석하고, UTM 장비와 BGP 피어링 중 발생한 미지원 capability 관련 오류를 조사</li><li>CNI를 Calico에서 Cilium으로 전환 테스트하고 BGP Peer 및 LoadBalancer IP Pool 구성</li><li>Cilium의 eBPF·DSR 설정과 SNAT masquerade 비활성화를 조합해 외부 클라이언트 원본 IP가 애플리케이션까지 전달되는지 확인</li></ul>
+            <b>플랫폼 운영</b><ul><li>개발·운영 클러스터 구성 및 분리, 노드 추가·제거와 클러스터 재구축</li><li>Istio Gateway, Harbor 등 클러스터 내 공통 플랫폼 구성 및 서비스 연결 확인</li><li>운영 환경의 DNS·인증서 설정과 컨테이너 이미지 다운로드 경로 점검</li></ul>
+            <b>검증 결과</b><p>네트워크 구성 변경 후 애플리케이션에서 실제 클라이언트 IP가 확인되는 것까지 검증하고, 구성 차이와 트러블슈팅 내용을 문서화했습니다.</p>
+          </div></details>
+        </article>
 
-/* ===== Portfolio refinement: senior-practitioner presentation ===== */
-:root{scroll-padding-top:92px}
-::selection{background:#326ce5;color:#fff}
-.project-card>p{line-height:1.85}
-.detail ul{padding-left:18px;margin:7px 0 15px}
-.detail li{margin:0 0 7px;line-height:1.8;color:#9aa8ba}
-.detail b{display:block;margin:8px 0 4px;color:#dce7f5}
-.section-head>p{line-height:1.9}
-.about-panel p{line-height:1.95}
-.cm-card li{margin:5px 0}
-.project-card:focus-within,.ns-box:focus-visible,.topbar a:focus-visible,.btn:focus-visible{outline:2px solid #38d9a9;outline-offset:3px}
-.cl-hint+.cl-hint{margin-top:5px;color:#63758d}
-@media(max-width:800px){
-  .hero-copy .lead{font-size:15px}
-  .cluster .ingress{flex-wrap:wrap}
-  .cluster .ingress .flow{min-width:20px}
-  .cp{line-height:1.6}
-}
-@media(max-width:520px){
-  .hero-copy h1{font-size:36px}
-  .project-card{padding:18px}
-  .project-card h3{font-size:16px;line-height:1.5}
-  .project-card>p{min-height:0}
-  .detail li{font-size:11px}
-}
+        <article class="project-card" id="ns-identity-ldap" data-ns="identity-ldap">
+          <div class="card-top"><span>02 / IDENTITY PLATFORM</span><span class="tag">LDAP</span></div>
+          <div class="pod-meta"><span class="name"><b>statefulset</b>/identity-ldap</span><span class="lbl">tier=identity</span><span class="st"><i></i>Project</span></div>
+          <div class="project-visual platform"><div class="dash-title">IDENTITY MANAGEMENT</div><div class="dash-stats"><b>LDAP</b><b>REPL.</b><b>AUTH</b><b>API</b></div><div class="dash-table"><i></i><i></i><i></i></div></div>
+          <h3>LDAP 서비스 컨테이너화 및 복제 구성 자동화</h3>
+          <p>LDAP 서버의 설치·초기화 절차를 컨테이너 이미지와 시작 스크립트로 표준화했습니다. Kubernetes StatefulSet의 안정적인 Pod 식별 특성을 활용해 복제 구성을 설계하고, 초기화·복제 절차를 자동화했습니다. 배포 이후에는 복제 상태와 인증 연동 문제를 로그 및 네트워크 설정을 기준으로 분석했습니다.</p>
+          <div class="chips"><span>OpenLDAP</span><span>Docker</span><span>Kubernetes</span><span>StatefulSet</span><span>Shell</span></div>
+          <details><summary>$ kubectl describe — 세부 수행 내용</summary><div class="detail">
+            <b>컨테이너 이미지 및 초기 구성</b><ul><li>Ubuntu 기반 Docker 이미지에 LDAP 설치 및 초기 설정 스크립트를 포함하고, 환경변수로 서버 설정을 전달해 컨테이너 시작 시 자동 구성되도록 구현</li><li>단일 LDAP 구성과 복제 구성을 구분할 수 있도록 서버 수 등의 환경변수 기반 초기화 흐름 설계</li></ul>
+            <b>Kubernetes StatefulSet 기반 복제</b><ul><li>Pod IP가 재생성 시 변경되는 문제를 확인하고 Deployment 대신 고정된 네트워크 식별자를 제공하는 StatefulSet 방식으로 변경</li><li>서비스 DNS를 이용해 ldap-0, ldap-1 형태의 Pod 간 통신을 구성</li><li>설정된 서버 수와 포트 연결 여부를 확인한 뒤 LDAP dsreplication의 enable·initialize 절차를 자동 실행하도록 스크립트 구현</li><li>마지막으로 생성된 LDAP 인스턴스에서 복제 초기화가 수행되도록 실행 조건 구성</li></ul>
+            <b>운영 및 장애 분석</b><ul><li>LDAP Replication 상태, 웹 콘솔 표시 상태, 서버 간 통신 및 인증 연동 문제 점검</li><li>복제 과정의 Server ID 오류와 네트워크 프록시 개입 가능성 등 원인을 로그와 구성 관점에서 분석</li></ul>
+          </div></details>
+        </article>
+
+        <article class="project-card" id="ns-access-security" data-ns="access-security">
+          <div class="card-top"><span>03 / ACCESS SECURITY</span><span class="tag">SECURITY SOLUTIONS</span></div>
+          <div class="pod-meta"><span class="name"><b>deployment</b>/access-security</span><span class="lbl">tier=security</span><span class="st"><i></i>Project</span></div>
+          <div class="project-visual layers"><div>ACCESS CONTROL</div><i>↓</i><div class="layer-row"><b>POLICY</b><b>SESSION</b><b>AUDIT</b></div><i>↓</i><div>MANAGED SYSTEMS</div></div>
+          <h3>시스템 접근제어·패스워드 관리 환경 운영 및 기능 검증</h3>
+          <p>시스템 접근제어 및 패스워드 관리 제품군의 테스트·운영 환경을 지원했습니다. 접속 정책, 허용 시간, 원본 IP 식별, 계정·패스워드 변경 정책 등 주요 기능을 시나리오 기반으로 검증하고, 서버·프록시·네트워크 구간에서 발생하는 연동 문제를 분석했습니다.</p>
+          <div class="chips"><span>Linux / Unix</span><span>SSH</span><span>MariaDB</span><span>Shell</span><span>Network</span></div>
+          <details><summary>$ kubectl describe — 세부 수행 내용</summary><div class="detail">
+            <b>접근제어 기능 및 운영 검증</b><ul><li>시스템 접근제어 서버의 버전 패치와 클라이언트 교체 후 접속 동작 확인</li><li>접근 허용 시간 조건에 따른 접속 성공·실패 시나리오 및 IP 기반 접근제어 테스트</li><li>Proxy를 경유할 때 실제 접속 원본 IP가 루프백 주소로 수집되는 현상을 로그에서 확인하고, 프록시·서비스 메시 헤더 전달 설정을 검토</li><li>Proxy Protocol 및 EnvoyFilter 적용을 테스트하고 전달 헤더에서 외부 클라이언트 IP가 확인되는지 검증</li><li>고객사 요구사항 문서의 시스템 접근제어 기능 항목별 테스트와 증적 수집 지원</li></ul>
+            <b>패스워드 관리 기능 및 환경 지원</b><ul><li>패스워드 검증 실패 로그를 확인하고 네트워크 연결 문제 여부 분석</li><li>패스워드 변경 정책·스케줄러 설정 및 변경 로그를 기준으로 기능 동작 확인</li><li>테스트용 서버·네트워크 장비의 기동, 마운트, SSH 접속 및 관리 Web 접근 검증</li><li>설치 환경 구성 명령어와 OS·DB·WAS 설정 절차를 정리해 설치 가이드 및 테스트 시나리오 문서화</li></ul>
+            <b>표현 기준</b><p>제품명과 회사 고유 명칭은 공개 페이지에서 제외하고 제품군의 일반적인 역할로 표기했습니다.</p>
+          </div></details>
+        </article>
+
+        <article class="project-card" id="ns-virtualization" data-ns="virtualization">
+          <div class="card-top"><span>04 / VIRTUALIZATION</span><span class="tag">PROXMOX · QEMU</span></div>
+          <div class="pod-meta"><span class="name"><b>node</b>/virtualization</span><span class="lbl">tier=compute</span><span class="st"><i></i>In Scope</span></div>
+          <div class="project-visual layers"><div>PHYSICAL HOST</div><i>↓</i><div class="layer-row"><b>VM</b><b>LXC</b><b>QEMU</b></div><i>↓</i><div>GUEST WORKLOADS</div></div>
+          <h3>가상화 인프라 운영 및 통합 테스트 환경 구축</h3>
+          <p>Proxmox 기반 물리 서버 자원을 VM·LXC로 분리해 서비스 검증 및 네트워크 실습 환경을 구성했습니다. 워크로드 특성에 따라 CPU·메모리·스토리지·네트워크를 할당하고, QEMU 프로세스와 게스트 자원 사용량을 분석해 테스트 환경의 병목을 파악했습니다.</p>
+          <div class="chips"><span>Proxmox VE</span><span>QEMU</span><span>LXC</span><span>Linux</span><span>Docker</span></div>
+          <details><summary>$ kubectl describe — 세부 수행 내용</summary><div class="detail"><ul><li>Proxmox 환경에서 VM 및 LXC 생성·변경·운영, 게스트 OS 설치와 네트워크 설정</li><li>LXC 내부 Docker 실행을 위한 nesting 설정 및 컨테이너 기동 테스트</li><li>QEMU 가상 장비별 메모리 사용량과 프로세스 RSS를 수집해 실습 환경의 자원 병목 분석</li><li>테스트 서버의 IP 대역 변경, 게이트웨이·DNS 설정 변경 및 서비스 기동 상태 검증</li><li>기존 테스트 베드의 LXC 워크로드 이관 후 사용자 확인을 통한 데이터·서비스 검증</li><li>솔루션별 Linux·Unix 테스트 서버와 네트워크 시뮬레이션 서버를 분리 구성</li></ul></div></details>
+        </article>
+
+        <article class="project-card" id="ns-infra-platform" data-ns="infra-platform">
+          <div class="card-top"><span>05 / INFRA PLATFORM</span><span class="tag">BACKEND DEVELOPMENT</span></div>
+          <div class="pod-meta"><span class="name"><b>deployment</b>/infra-platform</span><span class="lbl">tier=backend</span><span class="st"><i></i>Project</span></div>
+          <div class="project-visual platform"><div class="dash-title">INFRA ASSET MANAGEMENT</div><div class="dash-stats"><b>ASSET</b><b>API</b><b>DB</b><b>LOG</b></div><div class="dash-table"><i></i><i></i><i></i></div></div>
+          <h3>인프라 자산 관리 플랫폼 설계 및 개발</h3>
+          <p>물리 서버부터 VM·LXC·컨테이너·Kubernetes Pod까지 분산된 인프라 자원을 통합 관리하기 위한 데이터 모델과 Backend API를 개발했습니다. 자산 상태와 사용 기간, IP 할당 여부 등 운영 기준을 데이터 구조와 조회 로직에 반영하고, 실제 자산 현행화 업무에 필요한 화면·관리 기능을 연계했습니다.</p>
+          <div class="chips"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>SQL</span><span>JavaScript</span></div>
+          <details><summary>$ kubectl describe — 세부 수행 내용</summary><div class="detail"><b>데이터 모델 및 API</b><ul><li>자산·카테고리·이력 데이터를 구분하는 DB 구조 설계 및 기존 데이터 정리</li><li>자산 목록·상세 조회, 등록·수정·삭제 등 CRUD API와 카테고리 관리 API 구현</li><li>물리 서버, VM, LXC, Docker 및 Kubernetes Pod 등 자원 유형을 통합 관리할 수 있도록 데이터 구조 정리</li><li>사용 종료일, 자산 상태, IP 할당 여부 등 관리 기준을 데이터 모델과 조회 로직에 반영</li></ul><b>화면 및 운영 기능</b><ul><li>Backend API와 프론트엔드 화면 연동, 로그인·세션 관리 및 배포 로그 화면 개발</li><li>Helm REST API를 이용한 테스트 Pod 배포 흐름과 배포 정보 입력 화면 연동</li><li>자산 엑셀 내보내기 기능을 구현해 운영 클러스터에 배포하고 적용 확인</li><li>자산 실물 위치 확인, 자산 현행화, 사용자·관리자 매뉴얼 작성 및 공유</li></ul></div></details>
+        </article>
+
+        <article class="project-card" id="ns-cicd-pipeline" data-ns="cicd-pipeline">
+          <div class="card-top"><span>06 / CI & CD</span><span class="tag">DEVOPS</span></div>
+          <div class="pod-meta"><span class="name"><b>job</b>/cicd-pipeline</span><span class="lbl">tier=delivery</span><span class="st"><i></i>Workflow</span></div>
+          <div class="project-visual pipeline"><div>GIT</div><i>→</i><div>JENKINS</div><i>→</i><div>REGISTRY</div><i>→</i><div>K8S</div></div>
+          <h3>GitLab·Jenkins 기반 CI/CD 파이프라인 구성</h3>
+          <p>Git 저장소와 Jenkins Pipeline을 연계해 빌드부터 배포까지 이어지는 작업 흐름을 구성했습니다. 배포 대상별 설정 관리, 산출물 전송, DB 반영, 컨테이너 이미지 빌드 및 Kubernetes 배포 절차를 스크립트화해 수작업 단계를 줄이고 배포 과정을 일관되게 유지하도록 개선했습니다.</p>
+          <div class="chips"><span>GitLab</span><span>Jenkins</span><span>Groovy</span><span>Bash</span><span>Harbor</span><span>SSH / SCP</span></div>
+          <details><summary>$ kubectl describe — 세부 수행 내용</summary><div class="detail"><ul><li>Git 저장소와 Jenkins Pipeline을 연동해 main 브랜치 기준 CI 및 CD 작업 구성</li><li>Pipeline 내 중복 코드를 함수화하고 Shared Library 적용 가능성을 검토해 재사용성과 유지보수성 개선</li><li>빌드 산출물을 SCP로 배포 대상 서버에 전송하고 YAML 설정 파일을 파싱해 대상별 배포 변수 관리</li><li>데이터베이스 Import 및 필요한 데이터 UPDATE 절차 자동화</li><li>Proxy·Console 기동 및 재기동 스크립트 작성, 컨테이너 이미지 빌드·레지스트리 업로드·Kubernetes 배포 연계</li><li>Groovy 문자열과 Bash 변수 구문 충돌, Jenkins DSL 외부 클래스 참조 제약을 재현·분석하고 함수 기반 구현으로 조정</li></ul></div></details>
+        </article>
+
+        <article class="project-card" id="ns-network-lab" data-ns="network-lab">
+          <div class="card-top"><span>07 / NETWORK ENGINEERING</span><span class="tag">NETWORK</span></div>
+          <div class="pod-meta"><span class="name"><b>networkpolicy</b>/network-lab</span><span class="lbl">tier=network</span><span class="st"><i></i>Project</span></div>
+          <div class="project-visual network"><div class="net-device">ROUTER</div><div class="net-lines">┌──────┼──────┐</div><div class="net-row"><b>SWITCH</b><b>FIREWALL</b><b>CLIENT</b></div><div class="net-caption">VLAN · BGP · ACL</div></div>
+          <h3>네트워크 토폴로지 구성 및 장비 간 연동 검증</h3>
+          <p>GNS3 가상 네트워크와 물리 스위치·방화벽을 연계해 실제 운영 환경의 통신 구조를 재현했습니다. VLAN·Trunk·라우팅·접근 정책을 구성하고, 클라이언트와 서버 간 관리 및 서비스 트래픽이 의도한 경로로 전달되는지 단계별로 검증했습니다.</p>
+          <div class="chips"><span>GNS3</span><span>Cisco</span><span>Juniper</span><span>VLAN</span><span>BGP</span><span>UTM</span></div>
+          <details><summary>$ kubectl describe — 세부 수행 내용</summary><div class="detail"><ul><li>GNS3 VM을 원격 서버 방식으로 구성하고 로컬 클라이언트에서 중앙 관리하는 환경 구축</li><li>Cisco 및 Juniper 가상 장비 이미지 Import, 템플릿 생성, 장비 기동 및 토폴로지 구성</li><li>Cisco Catalyst 스위치의 VLAN·Trunk·IP·SSH 설정과 관리 Web 접속 테스트</li><li>Juniper vQFX·vMX 장비의 역할과 VLAN 지원 범위를 확인하고 장비 간 ICMP·SSH 통신 검증</li><li>다수 클라이언트 접속 시나리오에서 네트워크 구성 변경 전후 관리 Web 동시 접속 상태 확인</li><li>물리 스위치의 Access VLAN 및 Trunk 설정과 UTM VLAN 인터페이스·정책을 연계해 테스트 망 분리</li></ul></div></details>
+        </article>
+
+        <article class="project-card" id="ns-ceph-storage" data-ns="ceph-storage">
+          <div class="card-top"><span>08 / STORAGE & BACKUP</span><span class="tag">CEPH · VELERO</span></div>
+          <div class="pod-meta"><span class="name"><b>persistentvolume</b>/ceph-storage</span><span class="lbl">tier=storage</span><span class="st"><i></i>Storage</span></div>
+          <div class="project-visual storage"><div class="disk">OSD 01</div><div class="disk">OSD 02</div><div class="disk">OSD 03</div><div class="disk">OSD 04</div><div class="storage-base">DISTRIBUTED STORAGE / BACKUP</div></div>
+          <h3>Rook-Ceph 분산 스토리지 및 Kubernetes 백업 운영</h3>
+          <p>Rook-Ceph 기반 OSD·CephFS와 Kubernetes PV/PVC 연동 상태를 점검하고, Velero 백업 실패 원인을 스토리지 상태와 볼륨 프로비저닝 관점에서 추적했습니다. 노드·디스크 수준의 장애 징후를 확인하고 복구 조치 이후 OSD와 백업 작업의 정상 여부를 재검증했습니다.</p>
+          <div class="chips"><span>Rook-Ceph</span><span>CephFS</span><span>OSD</span><span>Velero</span><span>PV / PVC</span></div>
+          <details><summary>$ kubectl describe — 세부 수행 내용</summary><div class="detail"><ul><li>Ceph OSD·PG 상태와 스토리지 백업 미러 상태 점검</li><li>Velero 백업 로그를 확인해 운영 클러스터와 개발 클러스터의 백업 성공·실패 차이 분석</li><li>특정 노드의 OSD가 기동되지 않는 현상을 확인하고 OSD 연결 디스크의 I/O Error 및 S.M.A.R.T 검사 결과 점검</li><li>디스크 케이블 교체 후 OSD 기동과 백업 상태 정상화 확인</li><li>볼륨 프로비저닝 문제를 추가 점검하고 백업본 로그 및 후속 백업 상태 모니터링</li><li>CephFS 공유 스토리지 및 Kubernetes PV/PVC 연동 환경 운영</li></ul></div></details>
+        </article>
+
+        <article class="project-card" id="ns-radius-auth" data-ns="radius-auth">
+          <div class="card-top"><span>09 / NETWORK AUTHENTICATION</span><span class="tag">RADIUS</span></div>
+          <div class="pod-meta"><span class="name"><b>deployment</b>/radius-auth</span><span class="lbl">tier=auth</span><span class="st"><i></i>Project</span></div>
+          <div class="project-visual layers"><div>WIRELESS CLIENT</div><i>↓</i><div class="layer-row"><b>802.1X</b><b>LDAP</b><b>AAA</b></div><i>↓</i><div>AUTH / ACCOUNTING</div></div>
+          <h3>LDAP·RADIUS 기반 무선 네트워크 인증 연동 검증</h3>
+          <p>FreeRADIUS와 LDAP을 연동해 계정 기반 802.1X 무선 인증 흐름을 구성·검증했습니다. 인증(Authentication)과 사용 이력(Accounting)의 저장 경로를 분리하고, MySQL 기반 접속 기록 조회 및 클라이언트별 접속 시나리오를 확인했습니다.</p>
+          <div class="chips"><span>FreeRADIUS</span><span>LDAP</span><span>WPA3-Enterprise</span><span>MySQL</span><span>Python</span></div>
+          <details><summary>$ kubectl describe — 세부 수행 내용</summary><div class="detail"><ul><li>LDAP 사용자 ID·Password를 이용한 WPA3-Enterprise 무선망 인증 테스트</li><li>RADIUS AAA 중 Accounting 기능을 활성화하고 인증 이후 접속·사용 로그 수집</li><li>인증 데이터는 LDAP, Accounting 데이터는 MySQL로 분리해 저장하는 구조 검증</li><li>MySQL 쿼리로 사용자별 접속 현황과 트래픽 통계를 집계할 수 있는지 확인</li><li>FreeRADIUS 3.2.4에서 3.2.7로 업그레이드하고 CVE-2024-3596 관련 버전 영향 확인</li><li>NAS 요청 패킷의 Attribute 분석, DB 스키마 설계 및 Windows·Android·iOS 접속 가이드 작성</li></ul></div></details>
+        </article>
+
+        <article class="project-card" id="ns-observability" data-ns="observability">
+          <div class="card-top"><span>10 / AUTOMATION & OBSERVABILITY</span><span class="tag">OPERATIONS</span></div>
+          <div class="pod-meta"><span class="name"><b>daemonset</b>/observability</span><span class="lbl">tier=ops</span><span class="st"><i></i>Project</span></div>
+          <div class="project-visual storage"><div class="disk">CHECK</div><div class="disk">AGENT</div><div class="disk">LOG</div><div class="disk">APM</div><div class="storage-base">AUTOMATION / MONITORING</div></div>
+          <h3>인프라 복구·보안 점검 자동화와 모니터링 연동</h3>
+          <p>반복 수행되는 인프라 점검과 복구 절차를 Ansible·Shell 기반으로 자동화했습니다. etcd 스냅샷 복구 시나리오를 테스트하고, APM Agent의 컨테이너 이미지 구성 및 Kubernetes 환경 연동을 검증해 운영 가시성을 높이는 방안을 확인했습니다.</p>
+          <div class="chips"><span>Ansible</span><span>Bash</span><span>Python</span><span>Pinpoint</span><span>Jenkins</span></div>
+          <details><summary>$ kubectl describe — 세부 수행 내용</summary><div class="detail"><b>etcd 복구 자동화</b><ul><li>Ansible Playbook과 스크립트를 작성해 etcd 스냅샷 경로를 인수로 전달하면 마스터·워커 노드에 복구 명령을 순차 실행하도록 구현</li><li>테스트 환경에서 복구 후 약 3분 내 서비스와 Pod가 정상 상태로 돌아오는지 확인</li></ul><b>모니터링 연동</b><ul><li>애플리케이션 성능 모니터링 도구의 테스트 환경을 구성하고 Kubernetes 컨테이너에 Agent를 연동</li><li>Agent용 Dockerfile 작성, API 호출 오류 분석 및 Jenkins 배포 파이프라인과 APM 연동 가능성 테스트</li></ul><b>보안 점검 자동화</b><ul><li>보안 가이드라인에 따른 점검 스크립트 개발, 점검 항목별 실행 결과 테스트 및 오류 수정</li></ul></div></details>
+        </article>
+      </div></div>
+    </section>
+
+    <section id="stack" class="section alt">
+      <div class="wrap">
+        <div class="section-head"><div><span class="kicker">03 / NODE POOL</span><h2>Technical Stack<span>.</span></h2></div><p>프로젝트 수행 과정에서 사용하거나 검증한 기술을 역할별로 분류했습니다.<br>운영 적용 경험과 PoC·기능 검증 경험을 구분해 기재했습니다.</p></div>
+        <div class="stack-grid">
+          <div class="stack-item"><span>node-01<em>In Scope</em></span><h3>Cloud & Container</h3><p>Kubernetes · Docker · containerd · Cilium · Istio · Harbor</p></div>
+          <div class="stack-item"><span>node-02<em>In Scope</em></span><h3>Identity & Access</h3><p>LDAP · OpenLDAP · RADIUS · Authentication · Replication</p></div>
+          <div class="stack-item"><span>node-03<em>In Scope</em></span><h3>Virtualization</h3><p>Proxmox VE · QEMU · LXC · Linux · AIX</p></div>
+          <div class="stack-item"><span>node-04<em>In Scope</em></span><h3>Storage & Backup</h3><p>Rook-Ceph · CephFS · Velero · NFS · MariaDB · PostgreSQL</p></div>
+          <div class="stack-item"><span>node-05<em>In Scope</em></span><h3>Network & Security</h3><p>Cisco · GNS3 · VLAN · BGP · UTM · Access Policy</p></div>
+          <div class="stack-item"><span>node-06<em>In Scope</em></span><h3>DevOps & Automation</h3><p>GitLab · Jenkins · Ansible · Bash · CI/CD</p></div>
+          <div class="stack-item"><span>node-07<em>In Scope</em></span><h3>Development</h3><p>Python · FastAPI · SQL · JavaScript · REST API</p></div>
+          <div class="stack-item"><span>node-08<em>In Scope</em></span><h3>Monitoring</h3><p>Pinpoint · Datadog (PoC/Review) · Linux Diagnostics</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section wrap">
+      <div class="section-head"><div><span class="kicker">04 / PROFILE</span><h2>About Me<span>.</span></h2></div></div>
+      <div class="about-panel"><div class="about-symbol"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"><path d="M16 3l11.3 5.4 2.8 12.2-7.8 9.8H9.7L1.9 20.6l2.8-12.2z"/><circle cx="16" cy="17" r="3.2"/><path d="M16 14V7M18.9 15.4l5.5-3.2M19.6 18.5l6.2 1.6M17.6 20.6l2.8 5.4M14.4 20.6l-2.8 5.4M12.4 18.5l-6.2 1.6M13.1 15.4L7.6 12.2"/></svg></div><div><h3>운영 경험을 바탕으로 인프라를 설계하고 개선합니다.</h3><p>Linux 서버 운영을 기반으로 가상화·컨테이너 플랫폼, Kubernetes 클러스터, 네트워크 및 인증 인프라를 구축·운영해 왔습니다. 서비스 요구사항에 맞춰 인프라 구성 요소를 연결하고, 배포·운영 과정에서 발생하는 문제를 로그와 설정, 네트워크 흐름을 따라 분석합니다.</p><p>반복되는 작업은 Bash·Python·Ansible·CI/CD로 자동화하고, 운영 과정에서 필요한 자산 관리 플랫폼과 API도 개발했습니다. 인프라 운영과 플랫폼 개발을 함께 이해하며 안정성, 재현성, 유지보수성을 개선하는 엔지니어를 지향합니다.</p><p class="muted">공개 포트폴리오 특성상 회사·제품·고객사 고유 명칭과 내부 IP·도메인 등 식별 정보는 제외하고, 기술 영역과 수행 역할 중심으로 정리했습니다.</p></div></div>
+      <div class="profile-grid">
+        <div class="cm-card"><span class="cm-kind">configmap/working-philosophy</span><h4>Engineering Approach</h4><ul><li>증상만 처리하기보다 로그·설정·통신 경로를 함께 확인해 원인을 좁혀갑니다.</li><li>변경 전후의 동작을 검증하고, 재현 가능한 절차와 운영 문서로 남깁니다.</li><li>반복 작업은 자동화해 운영 편차와 수작업 오류를 줄입니다.</li></ul></div>
+        <div class="cm-card"><span class="cm-kind">configmap/areas-of-interest</span><h4>Technical Direction</h4><p>Kubernetes 플랫폼 엔지니어링, 클라우드 네이티브 네트워킹, 스토리지 안정성, 선언형 인프라 관리와 배포 자동화를 중심으로 기술적 깊이를 넓혀가고 있습니다.</p></div>
+        <div class="cm-card"><span class="cm-kind">configmap/profile</span><h4>Profile</h4><dl><dt>CAREER LEVEL</dt><dd>5년 차 실무 경험</dd><dt>ENGINEERING SCOPE</dt><dd>Build · Operate · Troubleshoot · Automate</dd><dt>CORE DOMAIN</dt><dd>Infrastructure &amp; Platform Engineering</dd><dt>PRIMARY STACK</dt><dd>Kubernetes · Linux · Python</dd></dl></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact wrap">
+      <span class="kicker">05 / INGRESS · GET IN TOUCH</span><h2>Let's build reliable<br><em>infrastructure.</em></h2>
+      <p>인프라 운영, 플랫폼 구축 및 자동화 관련 협업·기술 문의는 아래 연락처로 부탁드립니다.</p>
+      <a class="btn primary" href="mailto:YOUR_EMAIL@example.com">이메일 보내기 ↗</a>
+      <small>연락 가능한 이메일 주소로 mailto 링크를 변경해 주세요.</small>
+    </section>
+  </main>
+  <footer><span>© <span id="year"></span> CHO SEONG IK</span><span>CLOUD INFRASTRUCTURE · PLATFORM ENGINEERING</span><a href="#home">BACK TO TOP ↑</a></footer>
+  <script src="assets/script.js"></script>
+</body>
+</html>
