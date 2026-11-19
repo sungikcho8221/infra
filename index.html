@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cloud Infrastructure Engineer Portfolio">
+  <title>CHO SEONG IK | Infrastructure Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="scanline"></div>
+  <header class="topbar">
+    <a class="brand" href="#home"><span class="brand-mark">CI</span><span>CHO SEONG IK<span class="brand-sub">INFRASTRUCTURE ENGINEER</span></span></a>
+    <nav>
+      <a href="#projects">PROJECTS</a><a href="#stack">STACK</a><a href="#about">ABOUT</a><a href="#contact">CONTACT</a>
+    </nav>
+    <span class="availability"><i></i> PORTFOLIO ONLINE</span>
+  </header>
+
+  <main id="home">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="prompt">root@portfolio:~$</span> whoami</div>
+        <h1>Cloud &amp; Infrastructure<br><em>Engineer.</em></h1>
+        <p class="lead">인프라를 구축하고, 안정적으로 운영하며,<br>반복되는 작업을 자동화합니다.</p>
+        <p class="intro">Kubernetes · Virtualization · Storage · Network · DevOps</p>
+        <div class="hero-actions"><a class="btn primary" href="#projects">프로젝트 보기 <b>↘</b></a><a class="btn secondary" href="#about">프로필 확인</a></div>
+      </div>
+      <div class="terminal">
+        <div class="terminal-head"><span class="dots"><i></i><i></i><i></i></span><span>engineer@infra: ~</span><span>— □ ×</span></div>
+        <div class="terminal-body">
+          <p><span class="green">➜</span> <span class="blue">whoami</span></p>
+          <p class="output">Cloud Infrastructure Engineer</p>
+          <p><span class="green">➜</span> <span class="blue">cat expertise.txt</span></p>
+          <p class="output">Kubernetes / Proxmox / Ceph<br>GitLab / Jenkins / LDAP<br>Linux / Network / Python</p>
+          <p><span class="green">➜</span> <span class="blue">ls projects/</span></p>
+          <p class="output">01-kubernetes<br>02-virtualization<br>03-storage<br>04-network<br>05-cicd<br>06-infra-platform</p>
+          <p><span class="green">➜</span> <span class="cursor">_</span></p>
+        </div>
+      </div>
+      <div class="hero-foot"><span>01 / ENGINEERING PORTFOLIO</span><span>BUILD · OPERATE · AUTOMATE</span></div>
+    </section>
+
+    <section class="metrics wrap">
+      <div><span class="metric-label">FOCUS</span><strong>Infrastructure</strong><small>구축 및 운영</small></div>
+      <div><span class="metric-label">PLATFORM</span><strong>Kubernetes</strong><small>컨테이너 플랫폼</small></div>
+      <div><span class="metric-label">AUTOMATION</span><strong>CI / CD</strong><small>빌드 및 배포 자동화</small></div>
+      <div><span class="metric-label">DEVELOPMENT</span><strong>Python</strong><small>인프라 관리 시스템</small></div>
+    </section>
+
+    <section id="projects" class="section wrap">
+      <div class="section-head"><div><span class="kicker">02 / SELECTED WORK</span><h2>Featured Projects<span>.</span></h2></div><p>실제 수행한 구축·운영 업무를 중심으로 정리했습니다.<br>세부 구성과 성과는 공개 가능한 범위에서 보완할 수 있습니다.</p></div>
+      <div class="project-grid">
+        <article class="project-card featured">
+          <div class="card-top"><span>01 / CONTAINER PLATFORM</span><span class="tag">KUBERNETES</span></div>
+          <div class="project-visual kube"><div class="node"><b>CONTROL PLANE</b><span>API · Scheduler · Controller</span></div><div class="connector"></div><div class="workers"><div>WORKER NODE <small>Pods / Services</small></div><div>WORKER NODE <small>Pods / Services</small></div><div>WORKER NODE <small>Pods / Services</small></div></div></div>
+          <h3>Kubernetes 기반 클라우드 인프라 운영</h3>
+          <p>Kubernetes 클러스터와 컨테이너 워크로드를 운영하고, Cilium 및 Istio 기반 네트워크·서비스 통신 환경을 관리합니다.</p>
+          <div class="chips"><span>Kubernetes</span><span>Docker</span><span>Cilium</span><span>Istio</span><span>Harbor</span></div>
+          <details><summary>프로젝트 상세 작성하기</summary><div class="detail"><b>담당 범위</b><p>클러스터 운영, 노드·워크로드 관리, Gateway 및 이미지 저장소 운영</p><b>추가하면 좋은 근거 자료</b><p>비식별 처리한 클러스터 구성도, 노드·Pod 현황, 배포 흐름도</p></div></details>
+        </article>
+        <article class="project-card">
+          <div class="card-top"><span>02 / VIRTUALIZATION</span><span class="tag">PROXMOX</span></div>
+          <div class="project-visual layers"><div>PHYSICAL HOST</div><i>↓</i><div class="layer-row"><b>VM</b><b>LXC</b><b>QEMU</b></div><i>↓</i><div>GUEST WORKLOADS</div></div>
+          <h3>가상화 인프라 구축 및 운영</h3>
+          <p>Proxmox 기반 VM·LXC 환경과 QEMU 가상머신을 관리하고 자원 사용 현황을 점검합니다.</p>
+          <div class="chips"><span>Proxmox</span><span>QEMU</span><span>LXC</span><span>Docker</span></div>
+          <details><summary>프로젝트 상세 작성하기</summary><div class="detail"><b>담당 범위</b><p>가상머신 및 컨테이너 운영, 자원 관리, 테스트 환경 구성</p><b>추가 자료</b><p>비식별 처리한 호스트·VM 구성 화면, 자원 현황</p></div></details>
+        </article>
+        <article class="project-card">
+          <div class="card-top"><span>03 / DISTRIBUTED STORAGE</span><span class="tag">CEPH</span></div>
+          <div class="project-visual storage"><div class="disk">OSD 01</div><div class="disk">OSD 02</div><div class="disk">OSD 03</div><div class="disk">OSD 04</div><div class="storage-base">CEPH CLUSTER / CephFS</div></div>
+          <h3>Rook-Ceph 분산 스토리지 운영</h3>
+          <p>Rook-Ceph 기반 스토리지 상태를 점검하고 CephFS 공유 스토리지 운영 및 장애 상태를 분석합니다.</p>
+          <div class="chips"><span>Rook</span><span>Ceph</span><span>CephFS</span><span>Kubernetes</span></div>
+          <details><summary>프로젝트 상세 작성하기</summary><div class="detail"><b>담당 범위</b><p>스토리지 상태 점검, OSD·PG 모니터링, CephFS 관리</p><b>추가 자료</b><p>민감정보를 제거한 Ceph 상태 및 스토리지 구성 화면</p></div></details>
+        </article>
+        <article class="project-card">
+          <div class="card-top"><span>04 / NETWORK LAB</span><span class="tag">GNS3</span></div>
+          <div class="project-visual network"><div class="net-device">ROUTER</div><div class="net-lines">┌──────┼──────┐</div><div class="net-row"><b>SWITCH</b><b>FIREWALL</b><b>CLIENT</b></div><div class="net-caption">VLAN · TRUNK · POLICY</div></div>
+          <h3>네트워크 및 BMT 테스트 환경 구축</h3>
+          <p>GNS3와 Cisco 스위치, VLAN 및 UTM 정책을 활용해 네트워크 테스트 환경을 구성합니다.</p>
+          <div class="chips"><span>GNS3</span><span>Cisco</span><span>VLAN</span><span>UTM</span></div>
+          <details><summary>프로젝트 상세 작성하기</summary><div class="detail"><b>담당 범위</b><p>네트워크 토폴로지 구성, VLAN 분리, 통신 정책 점검</p><b>추가 자료</b><p>실제 IP·도메인·정책을 제거한 네트워크 구성도</p></div></details>
+        </article>
+        <article class="project-card">
+          <div class="card-top"><span>05 / DELIVERY PIPELINE</span><span class="tag">DEVOPS</span></div>
+          <div class="project-visual pipeline"><div>GITLAB</div><i>→</i><div>JENKINS</div><i>→</i><div>HARBOR</div><i>→</i><div>K8S</div></div>
+          <h3>GitLab·Jenkins 기반 CI/CD 운영</h3>
+          <p>소스코드 관리부터 빌드, 컨테이너 이미지 저장, 배포까지 이어지는 자동화 흐름을 구성하고 운영합니다.</p>
+          <div class="chips"><span>GitLab</span><span>Jenkins</span><span>Harbor</span><span>Bash</span></div>
+          <details><summary>프로젝트 상세 작성하기</summary><div class="detail"><b>담당 범위</b><p>Pipeline 구성, 빌드 스크립트 관리, 이미지 배포 흐름 운영</p><b>추가 자료</b><p>토큰·저장소 주소·내부 경로를 제거한 Pipeline 화면</p></div></details>
+        </article>
+        <article class="project-card">
+          <div class="card-top"><span>06 / INTERNAL PLATFORM</span><span class="tag">DEVELOPMENT</span></div>
+          <div class="project-visual platform"><div class="dash-title">INFRA MANAGEMENT</div><div class="dash-stats"><b>VM</b><b>LXC</b><b>DOCKER</b><b>PODS</b></div><div class="dash-table"><i></i><i></i><i></i></div></div>
+          <h3>DSM Infra 및 LDAP Portal 개발</h3>
+          <p>Python·FastAPI 기반 인프라 관리 시스템과 LDAP 연동 기능을 개발하며 자산 및 계정 관리 업무를 지원합니다.</p>
+          <div class="chips"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>LDAP</span></div>
+          <details><summary>프로젝트 상세 작성하기</summary><div class="detail"><b>담당 범위</b><p>API 개발, 데이터 모델 관리, 자산 통합 관리 및 LDAP 연동</p><b>추가 자료</b><p>실제 사용자·서버 데이터가 없는 데모 화면 또는 재구성 이미지</p></div></details>
+        </article>
+      </div>
+    </section>
+
+    <section id="stack" class="section alt">
+      <div class="wrap">
+        <div class="section-head"><div><span class="kicker">03 / TOOLKIT</span><h2>Technical Stack<span>.</span></h2></div><p>실무에서 다룬 기술을 분야별로 정리했습니다.<br>경험 수준은 프로젝트별로 구체화할 예정입니다.</p></div>
+        <div class="stack-grid">
+          <div class="stack-item"><span>01</span><h3>Cloud & Container</h3><p>Kubernetes · Docker · containerd · Cilium · Istio · Harbor</p></div>
+          <div class="stack-item"><span>02</span><h3>Virtualization</h3><p>Proxmox · QEMU · LXC</p></div>
+          <div class="stack-item"><span>03</span><h3>Storage & Database</h3><p>Rook-Ceph · CephFS · MariaDB · PostgreSQL</p></div>
+          <div class="stack-item"><span>04</span><h3>DevOps</h3><p>GitLab · Jenkins · Git · Bash</p></div>
+          <div class="stack-item"><span>05</span><h3>Network & Identity</h3><p>Cisco · GNS3 · VLAN · UTM · LDAP</p></div>
+          <div class="stack-item"><span>06</span><h3>Development</h3><p>Python · FastAPI · SQL</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section wrap">
+      <div class="section-head"><div><span class="kicker">04 / PROFILE</span><h2>About Me<span>.</span></h2></div></div>
+      <div class="about-panel"><div class="about-symbol">[ CI ]</div><div><h3>Infrastructure, from operation to automation.</h3><p>서버·가상화·컨테이너·네트워크 인프라를 운영하고, 운영 과정에서 필요한 관리 도구를 직접 개발하는 엔지니어입니다. 실제 업무에서 담당한 범위와 기술적 의사결정을 프로젝트 단위로 기록합니다.</p><p class="muted">경력 기간 · 소속 · 학력 · 연락처는 공개 가능한 정보로 직접 입력해 주세요.</p></div></div>
+    </section>
+
+    <section id="contact" class="section contact wrap">
+      <span class="kicker">05 / GET IN TOUCH</span><h2>Let's build reliable<br><em>infrastructure.</em></h2>
+      <p>협업 및 기술 관련 문의는 아래 연락처로 부탁드립니다.</p>
+      <a class="btn primary" href="mailto:YOUR_EMAIL@example.com">이메일 보내기 ↗</a>
+      <small>YOUR_EMAIL@example.com 주소를 본인 이메일로 변경해 주세요.</small>
+    </section>
+  </main>
+  <footer><span>© <span id="year"></span> CHO SEONG IK</span><span>BUILT WITH CURIOSITY &amp; ENGINEERING</span><a href="#home">BACK TO TOP ↑</a></footer>
+  <script src="assets/script.js"></script>
+</body>
+</html>
